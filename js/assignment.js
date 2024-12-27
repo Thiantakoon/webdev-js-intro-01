@@ -9,37 +9,36 @@ const submissionBtn = document.getElementById("submission-btn")
 
 // Declare a constant variable named "book" and assign
 // the name of your favorite book to that variable.
-
-const book = Fragments
-book = Fragments
-console.log (book);
+const book = "Fragments";
+book = "Osiris Rising";
 
 // Declare a mutable variable named "activity" and assign
 // an activity to it.
+let activity = "Reading";
+activity = "Writing";
 
-let activity = Reading;
-            activity = Writing;
-            console.log (activity);
 
-function updateBookSentence(This is my favourite bookk) {
+function updateBookSentence() {
     // Sets the text inside the element with the id of book answer. 
     // innerText is one of many properties on a HTML element.
     bookAnswerEl.innerText = book
 }
 
-function updateActivitySentence(Writing) {
+function updateActivitySentence() {
     // Update this function 
     // (hint: it will be similiar to the previous function)
+activityAnswerEl.innerText = activity
 
 }
 
-function render(Fragments) {
+function render() {
     // Finish writing this function
-    updateBookSentence(Fragments);
-
+    updateBookSentence();
+    updateActivitySentence();
 }
 
 submissionBtn.addEventListener("click", function () {
     // Calling the function that renders the update
     // when the button is clicked
-    render(Fragments
+    render();
+})
